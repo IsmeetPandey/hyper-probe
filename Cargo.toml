@@ -1,0 +1,19 @@
+[package]
+name = "hyper-probe"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ismeet Pandey <ismeetpandey3@gmail.com>"]
+description = "Blazing-fast, concurrent TCP & HTTP latency probe with percentile distribution and jitter analysis"
+license = "MIT"
+repository = "https://github.com/IsmeetPandey/hyper-probe"
+readme = "README.md"
+keywords = ["cli", "latency", "network", "probe", "monitoring"]
+categories = ["command-line-utilities", "network-programming"]
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+colored = "2.1"
+tokio = { version = "1.38", features = ["full"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
